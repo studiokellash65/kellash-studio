@@ -1,0 +1,255 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & fonts */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* background nyeupe */
+    color: #000000; /* text nyeusi */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #000000; /* Navbar nyeusi */
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+
+/* Burger menu for mobile */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+    color:black;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/* Services / Updates Section */
+.services, .updates {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.service-cards, .update-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #ffffff; /* card nyeupe */
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* uniform height */
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Card paragraph clamp */
+.card p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Footer nyeusi */
+    color: #ffffff;
+}
+/* Zuia scroll ya kushoto-kulia kwenye body nzima */
+body {
+  overflow-x: hidden;
+}
+
+/* Rekebisha nav-links ili isisukume ukurasa */
+.nav-links {
+  overflow-x: hidden;
+}
+
+/* Ili menu ifunike upande mzima badala ya kusababisha scroll */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: fixed; /* badala ya absolute */
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0%);
+  }
+
+  /* Burger icon iwe juu kabisa */
+  .burger {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+.cardyanyimbo {
+    flex: 1 1 250px;
+    max-width: 330px;
+    padding: 20px;
+    background-color: #ffffff; /* card nyeupe */
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px; /* uniform height */
+    transition: all 0.3s ease;
+}
+
+.ads-banner {
+  background: #f1c40f;   /* rangi ya manjano (unaweza kubadilisha) */
+  color: #111;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.ads-banner {
+  background: none;
+  color: #0a0a0a;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scroll-left 29s linear infinite;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid orangered;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+

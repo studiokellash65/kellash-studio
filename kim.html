@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELLASH STUDIO</title>
+    <meta name="description" content="Kellash Studio is a Tanzanian music platform for artists to record, upload, and share their songs.">
+  <meta name="keywords" content="Kellash Studio, Akwiz Kellash, Tanzanian music, record studio, download songs">
+  <meta name="author" content="Akwiz Kellash">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
+</head>
+
+<body>
+
+ <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <center>
+    <P style="color: red;">AUDIO</P>
+    AUDIO I Kim-Voice x Dee Breezy-Waambie <br>(unreleased)
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="kim voice cover.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="kim voice mp3.m4a" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('kim voice x dee breezy- waambie mp3.m4a').then(r => r.arrayBuffer());
+  
+
+    zip.file('kim voice- waambie.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'kim voice x dee breezy-waambie.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+
+</div> <br>
+    Also you may like:<br>
+   <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="cr juma.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="juma.html"<h3 style="font-size: 20px; margin:10px 0;">CTG Harmaton- Enjo</h3>
+</a>
+   
+
+   
+
+</div>
+
+
+
+
+<!-- ✅ JavaScript -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>

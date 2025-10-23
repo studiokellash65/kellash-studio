@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - KELLASH STUDIO</title>
+     <meta name="description" content="Kellash Studio is a Tanzanian music platform for artists to record, upload, and share their songs.">
+  <meta name="keywords" content="Kellash Studio, Akwiz Kellash, Tanzanian music, record studio, download songs">
+  <meta name="author" content="Akwiz Kellash">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 10%;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 350px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .service-card h3 {
+      margin-top: 10px;
+    }
+
+    .service-card p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      color: white;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .services-container {
+        padding: 20px 5%;
+        gap: 20px;
+      }
+
+      .service-card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar (same as template) -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <h1>Our Services</h1>
+
+  <div class="services-container">
+    <div class="service-card">
+      <h3>🎵 Music Production</h3>
+      <p>Recording, mixing, mastering, and beat creation for artists in all genres.</p>
+      <img src="Music-Production-2-2.png.webp" alt="Music Production">
+    </div>
+
+    <div class="service-card">
+      <h3>🎬 Movie & Video Production</h3>
+      <p>Professional video shooting, editing, and directing for music videos and films.</p>
+      <img src="film-prod-02-large.jpg" alt="Movie Production">
+    </div>
+
+    <div class="service-card">
+      <h3>🎨 Graphic Design</h3>
+      <p>Creative logos, posters, flyers, and branding materials that speak your vision.</p>
+      <img src="Graphic-Design.jpg" alt="Graphic Design">
+    </div>
+
+    <div class="service-card">
+      <h3>🌈 Motion Graphics & Animation</h3>
+      <p>Custom animations and visual effects to boost your storytelling and ads.</p>
+      <img src="anim.webp" alt="Motion Graphics">
+    </div>
+
+    <div class="service-card">
+      <h3>📢 Digital Marketing</h3>
+      <p>Grow your brand through social media, SEO, content, and influencer strategies.</p>
+      <img src="digital market" alt="Digital Marketing">
+    </div>
+
+    <div class="service-card">
+      <h3>🛍️ Online Merchandise</h3>
+      <p>Custom T-shirts, hoodies, hats, and accessories to represent your style.</p>
+      <img src="onli" alt="Online Merchandise">
+    </div>
+
+    <div class="service-card">
+      <h3>🎤 Talent Management</h3>
+      <p>We help artists grow, book shows, and connect with fans and opportunities.</p>
+      <img src="talent" alt="Talent Management">
+    </div>
+
+    <div class="service-card">
+      <h3>🎙️ Podcast Production</h3>
+      <p>Record, edit, and distribute podcast episodes with high quality for online listeners.</p>
+      <img src="prodcast" alt="Podcast Production">
+    </div>
+
+    <div class="service-card">
+      <h3>📸 Photography</h3>
+      <p>Photography services for studio sessions, special events, products, and fashion.</p>
+      <img src="photography-consent.jpg" alt="Photography">
+    </div>
+
+    <div class="service-card">
+      <h3>📈 Music Distribution</h3>
+      <p>We help distribute your music to platforms like Spotify, Audiomack, Apple Music, and Boomplay.</p>
+      <img src="disr" alt="Music Distribution">
+    </div>
+
+    <div class="service-card">
+      <h3>💼 Artist Booking</h3>
+      <p>We coordinate shows, media appearances, and contracts on behalf of the artists under our management.</p>
+      <img src="bookinh" alt="Artist Booking">
+    </div>
+  </div>
+ <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+    });
+  </script>
+  <footer>
+    &copy; 2025 KELLASH STUDIO. Haki zote zimehifadhiwa.
+  </footer>
+
+</body>
+</html>
