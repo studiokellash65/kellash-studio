@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+       <meta name="description" content="Kellash Studio is a Tanzanian music platform for artists to record, upload, and share their songs.">
+  <meta name="keywords" content="Kellash Studio, Akwiz Kellash, Tanzanian music, record studio, download songs">
+  <meta name="author" content="Akwiz Kellash">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+    <!-- Burger JS -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+    });
+  </script>

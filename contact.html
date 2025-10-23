@@ -1,0 +1,188 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - KELLASH STUDIO</title>
+     <meta name="description" content="Kellash Studio is a Tanzanian music platform for artists to record, upload, and share their songs.">
+  <meta name="keywords" content="Kellash Studio, Akwiz Kellash, Tanzanian music, record studio, download songs">
+  <meta name="author" content="Akwiz Kellash">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: black;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    /* Form */
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid black;
+      font-size: 16px;
+      background: white;
+      color: black;
+    }
+
+    form button {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .error {
+      font-size: 12px;
+      color: red;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+      For Adverts,sponsorship and partnership,get in touch with
+      <p><strong>Email:</strong> kellashstudiotz@gmail.com</p>
+      <p><strong>Phone:</strong> +255 784 800 125</p>
+      <p><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+    </div>
+
+    <form id="contactForm" action="https://formspree.io/f/xeolnwzr" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input id="phone" name="phone" type="text" inputmode="tel" autocomplete="tel"
+        placeholder="+255784800125" maxlength="15" aria-describedby="phoneHint phoneError" required />
+      <div id="phoneHint" class="hint">Anza na <code>+</code>, kisha hadi <strong>14</strong> tarakimu. Mfano: <code>+255712345678</code></div>
+      <div id="phoneError" class="error" role="alert" aria-live="polite" style="display:none"></div>
+
+      <input type="text" name="order" placeholder="Service you want (e.g., Photoshop, Videography, Music Recording, Designing)" required />
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Google Map -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.01589114684!2d39.2650021!3d-6.7923546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c779121340f%3A0x91a0c0d0c01c682c!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1719229160256!5m2!1sen!2stz"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const phone = document.getElementById('phone');
+    const phoneError = document.getElementById('phoneError');
+
+    function validatePhone() {
+      const re = /^\+\d{1,14}$/;
+      const val = phone.value.trim();
+      if (!val) {
+        phoneError.textContent = 'Namba ya simu ni lazima.';
+        return false;
+      }
+      if (!re.test(val)) {
+        phoneError.textContent = 'Tafadhali weka namba iliyoanza na + na isiyozidi digits 14 (mfano +255712345678).';
+        return false;
+      }
+      phoneError.textContent = '';
+      return true;
+    }
+
+    phone.addEventListener('input', () => {
+      if (phone.value.length > 15) phone.value = phone.value.slice(0, 15);
+      validatePhone();
+    });
+
+    form.addEventListener('submit', (e) => {
+      if (!validatePhone()) {
+        e.preventDefault();
+        phone.focus();
+      }
+    });
+  </script>
+<!-- ✅ JavaScript -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
+
+  <footer style="text-align:center; padding:20px; background:black; color:white;">
+    &copy; 2025 KELLASH STUDIO.All rights reserved.
+  </footer>
+
+</body>
+</html>

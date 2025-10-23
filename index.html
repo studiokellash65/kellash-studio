@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELLASH STUDIO</title>
+    <meta name="description" content="Kellash Studio is a Tanzanian music platform for artists to record, upload, and share their songs.">
+  <meta name="keywords" content="Kellash Studio, Akwiz Kellash, Tanzanian music, record studio, download songs">
+  <meta name="author" content="Akwiz Kellash">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
+</head>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .box{
+    background-color: #eee;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+  }
+  input{
+    width: 240px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+  }
+  .fa-solid:hover{
+    color: orangered;
+    cursor: pointer;
+  }
+  .result {
+      background: white;
+      border: 1px solid #eee;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: 0.2s;
+    }
+
+    .result:hover {
+      background: #f1f1f1;
+    }
+
+    .result a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .result p {
+      color: #555;
+    }
+
+    .highlight {
+      background: yellow;
+    }
+</style>
+<body>
+
+ <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <!-- 🔹 Ads Banner -->
+    <div class="ads-banner">
+        <div class="scroll-text">
+            🔔 NEW UPDATES | Join Kellash Studio today and unlock unlimited entertainment, creativity, and opportunities to showcase your talent without limits! 🔔
+        </div>
+    </div>
+  <center>
+<!-- Search Box -->
+<form id="searchForm" action="search.php" method="GET" class="box">
+   <input type="text" id="searchInput" placeholder="Search Artist or song">
+
+  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+
+ <div id="results"></div>
+  </div>
+
+  </center>
+  <!-- Hero Section -->
+  <section class="hero">
+      <h1 style="font-size: 25px;">KARIBU KELLASH STUDIO</h1>
+      <p></p>
+      <a href="services.html" class="btn">Tazama Huduma Zetu</a>
+  </section>
+  <center>
+<div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="daino album.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    
+    <a href="daino.html"<h3 style="font-size: 20px; margin:10px 0;">Daino Minoma Ft Mashada - Akili ya Ndocc</h3>
+</a>
+   <br>
+</div>
+   <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="fammi.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    
+    <a href="fammi.html"<h3 style="font-size: 20px; margin:10px 0;">Fammi Africa-Umejaa</h3>
+</a>
+   
+</div>
+<br>
+<div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="cr juma.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    
+    <a href="juma.html"<h3 style="font-size: 20px; margin:10px 0;">CTG harmaton- Enjo</h3>
+</a>
+   
+</div>
+<br>
+<div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="kim voice cover.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    
+    <a href="kim.html"<h3 style="font-size: 20px; margin:10px 0;">Kim-Voice x Dee Breezy- Waambie(unreleased)</h3>
+</a>
+   
+</div>
+
+
+  <!-- Services Section -->
+  <section class="services">
+      <h2>Huduma Zetu</h2>
+      <div class="service-cards">
+          <div class="card">
+              <h3>Music Production</h3>
+              <p>Tunatengeneza beats, recording, mixing na mastering kwa ubora wa hali ya juu.</p>
+          </div>
+          <div class="card">
+              <h3>Artist Promotion</h3>
+              <p>Tunasaidia wasanii kufikia mashabiki wapya kupitia mitandao ya kijamii na platforms kubwa.</p>
+          </div>
+          <div class="card">
+              <h3>Events & Shows</h3>
+              <p>Tunaanda matamasha, gigs na livestreams kwaajili ya kuonyesha kazi za wasanii wetu.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact-info">
+      For Adverts,sponsorship and partnership,get in touch with
+      <p><strong>Email:</strong> kellashstudiotz@gmail.com</p>
+      <p><strong>Phone:</strong> +255 784-800-125</p>
+      <p><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+    </div>
+    <br>
+      <p>&copy; 2021-2025 KELLASH STUDIO. All rights reserved.</p>
+  </footer>
+
+<!-- ✅ JavaScript -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
+
+
+
+<script>
+const form = document.getElementById('searchForm');
+const loader = document.getElementById('loader');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent default submit
+  loader.style.display = 'flex'; // show loader
+
+  setTimeout(() => {
+    form.submit(); // submit after 3 seconds
+  }, 3000); // 3000ms = 3 seconds
+});
+</script>
+
+ <!-- Fuse.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script>
+    // 🔹 Orodha ya kurasa za website yako
+    const pages = [
+      { title: "Daino minoma ft Benito Mc- Akili ya ndocc", url: "daino.html", content: "" },
+      { title: "Fammi Africa-Umejaa", url: "fammi.html", content: "" },
+      { title: "Huduma", url: "services.html", content: "" },
+      { title: "ctg harmanto- Enjo", url: "juma.html", content: "" },
+      { title: "kim voice-waambie", url: "kim.html", content: "" }
+    ];
+
+    // 🔹 Search configuration
+    const fuse = new Fuse(pages, {
+      keys: ["title", "content"],
+      threshold: 0.3
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    const resultsDiv = document.getElementById("results");
+
+    // Highlight text
+    function highlight(text, term) {
+      const regex = new RegExp(`(${term})`, "gi");
+      return text.replace(regex, "<span class='highlight'>$1</span>");
+    }
+
+    // On typing
+    searchInput.addEventListener("input", () => {
+      const term = searchInput.value.trim();
+      resultsDiv.innerHTML = "";
+
+      if (term === "") return;
+
+      const results = fuse.search(term);
+
+      if (results.length === 0) {
+        resultsDiv.innerHTML = "<p>Hakuna matokeo yaliyopatikana </p>";
+        return;
+      }
+
+      results.forEach(r => {
+        const item = r.item;
+        const html = `
+          <div class="result">
+            <a href="${item.url}">${highlight(item.title, term)}</a>
+            <p>${highlight(item.content, term)}</p>
+          </div>
+        `;
+        resultsDiv.innerHTML += html;
+      });
+    });
+  </script>
+
+</body>
+</html>
