@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELLASH STUDIO</title>
+    <meta name="description" content="Kellash Studio is a Tanzanian music platform for artists to record, upload, and share their songs.">
+  <meta name="keywords" content="Kellash Studio, Akwiz Kellash, Tanzanian music, record studio, download songs">
+  <meta name="author" content="Akwiz Kellash">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
+</head>
+
+<body>
+
+ <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <center>
+    <P style="color: red;">AUDIO</P>
+    AUDIO I Fesy melody  x Lady DIdy  - Over<br>(unreleased)
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="Fesy melody  x Lady DIdy  - Over.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('Fesy melody  x Lady DIdy  - Over.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file('Fesy melody  x Lady DIdy  - Over.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Fesy melody  x Lady DIdy  - Over.mp3.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+
+</div> <br>
+    Also you may like:<br>
+    
+    AUDIO I Fesy melody - Nauli<br>(unreleased)
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="Fesy melody - Nauli Official Audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('Fesy melody - Nauli.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file('Fesy melody - Nauli.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Fesy melody - Nauli.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div> <br>
+
+   Also you may like:<br>
+AUDIO I Fesy melody - Bachera<br>(unreleased)
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="Fesy melody -bachera_060802.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('Fesy melody - Bachera.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file('Fesy melody - Bachera.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Fesy melody - Bachera.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+</div> <br>
+  
+
+
+
+
+
+    Also you may like:<br>
+    
+    AUDIO I Fesy melody -Vimba <br>
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="Fesy melody -Vimba (Official Audio)(0)_061155.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch(' Fesy melody -Vimba.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file(' Fesy melody -Vimba.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = ' Fesy melody -Vimba.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div> <br>
+
+    Also you may like:<br>
+    
+    AUDIO I Fesy Melody- Usinitose <br>
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="Fesy Melody- Usinitose Final Master_060846.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch(' Fesy melody -Vimba.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file(' Fesy Melody- Usinitose.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = ' Fesy Melody- Usinitose.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div> <br>
+
+    Also you may like:<br>
+    
+    AUDIO I Fesy melody -Vimba <br>
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="Fesy melody -Vimba (Official Audio)(0)_061155.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch(' Fesy melody -Vimba.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file(' Fesy melody -Vimba.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = ' Fesy melody -Vimba.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div> <br>
+
+    Also you may like:<br>
+    
+    AUDIO I Fesy Melody- PAMELA <br>
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="meloody..jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="FESY MELODY - PAMELA  AUDIO.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.x  
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch(' Fesy Melody- PAMELA.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file(' Fesy Melody- PAMELA.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = ' Fesy Melody- PAMELA.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ✅ JavaScript -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
