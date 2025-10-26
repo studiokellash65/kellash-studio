@@ -252,4 +252,15 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+ /* Header kuu */
+    header {
+      background-color: #000000; /* Rangi ya nyuma */
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      position: sticky;
+      top: 0; /* Hii ndiyo sehemu muhimu kufanya iwe sticky */
+      z-index: 1000; /* Inafanya ibaki juu ya vitu vingine */
+    }
+
 
